@@ -17,7 +17,7 @@ type joinRequest struct {
 func (h handler) JoinRaftHandler(ctx *fiber.Ctx) error {
 	var form = joinRequest{}
 	if err := ctx.BodyParser(&form); err != nil {
-		return ctx.Status(http.StatusUnprocessableEntity).JSON(map[string]interface{}{
+		return ctx.Status(http.StatusUnprocessableEntity).JSON(fiber.Map{
 			"error": fmt.Sprintf("error binding: %s", err.Error()),
 		})
 	}
