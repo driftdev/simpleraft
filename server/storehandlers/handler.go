@@ -1,4 +1,4 @@
-package storehandler
+package storehandlers
 
 import (
 	"github.com/dgraph-io/badger/v2"

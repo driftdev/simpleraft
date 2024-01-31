@@ -1,4 +1,4 @@
-package storehandler
+package storehandlers
 
 import (
 	"encoding/json"
