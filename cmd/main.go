@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
+	"github.com/arkamfahry/simpleraft/fsm"
+	"github.com/arkamfahry/simpleraft/server"
 	"github.com/hashicorp/raft"
 	raftboltdb "github.com/hashicorp/raft-boltdb"
 	"github.com/spf13/viper"
-	"github.com/teapartydev/simpleraft/fsm"
-	"github.com/teapartydev/simpleraft/server"
 	"log"
 	"net"
 	"os"

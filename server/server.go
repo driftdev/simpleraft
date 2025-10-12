@@ -1,9 +1,9 @@
 package server
 
 import (
+	"github.com/arkamfahry/simpleraft/server/rafthandlers"
+	"github.com/arkamfahry/simpleraft/server/storehandlers"
 	"github.com/hashicorp/raft"
-	"github.com/teapartydev/simpleraft/server/rafthandlers"
-	"github.com/teapartydev/simpleraft/server/storehandlers"
 )
 
 type Srv struct {

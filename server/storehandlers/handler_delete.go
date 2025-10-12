@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/arkamfahry/simpleraft/fsm"
 	"github.com/hashicorp/raft"
-	"github.com/teapartydev/simpleraft/fsm"
 )
 
 func (h handler) Delete(ctx *fiber.Ctx) error {
